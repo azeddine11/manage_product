@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eaf1c9;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+  
+  label {
+    margin: 10px 0;
+  }
+  
+  input[type="text"], input[type="number"], textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    background-color: rgb(80, 80, 80);
+  }
+  
+  button[type="submit"], button {
+    padding: 10px;
+    background-color: #cf0f0f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button[type="submit"]:hover, button:hover {
+    background-color: #cf0f0f;
+  }
+  
+  hr {
+    margin: 20px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #cf0f0f;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .modal-content {
+    background-color: white;
+    margin: 10% auto;
+   
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+    position: relative;
+    }
+    
+    .close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    }
+    
+    .close-button:hover,
+    .close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    }
+    
+    .modal-content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    }
+    
+    @media screen and (max-width: 600px) {
+    th, td {
+    font-size: 12px;
+    }
+    }
+    
+    @media screen and (max-width: 400px) {
+    form {
+    margin: 10px;
+    }
+    
+    input[type="text"], input[type="number"], textarea {
+    font-size: 14px;
+    }
+    
+    button[type="submit"], button {
+    font-size: 14px;
+    }
+    }  
