@@ -67,8 +67,7 @@ e.preventDefault();
 const name = e.target.elements.name.value;
 const price = parseFloat(e.target.elements.price.value);
 const image = e.target.elements.image.files[0] ? URL.createObjectURL(e.target.elements.image.files[0]) : '';
-const description = e.target.elements
-description.value;
+const description = e.target.elements.description.value;
 addProduct(name, price, image, description);
 e.target.reset();
 });

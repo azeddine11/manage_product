@@ -1,13 +1,15 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 0 10%;
     padding: 0;
-    background-color: #eaf1c9;
+    background-color: rgb(88, 81, 81);
   }
   
   h1 {
     text-align: center;
     margin: 20px 0;
+    color: white;
+    font-size: 50px;
   }
   
   form {
@@ -26,7 +28,7 @@ body {
     border-radius: 5px;
     font-size: 16px;
     margin-bottom: 10px;
-    background-color: rgb(80, 80, 80);
+    background-color: rgb(236, 236, 236);
   }
   
   button[type="submit"], button {
@@ -67,6 +69,13 @@ body {
     background-color: #f2f2f2;
   }
   
+
+  #product-form label {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+  }
   .modal {
     display: none;
     position: fixed;
@@ -90,6 +99,9 @@ body {
     position: relative;
     }
     
+    h2{
+      color: white;
+    }
     .close-button {
     color: #aaa;
     float: right;
