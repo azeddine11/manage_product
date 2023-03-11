@@ -125,6 +125,14 @@ body {
     height: auto;
     margin-bottom: 20px;
     }
+
+    #search-input {
+      display: block;
+      margin : 30px auto;
+      padding-right: 280px;
+      text-align: left;
+      
+    }
     
     @media screen and (max-width: 600px) {
     th, td {

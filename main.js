@@ -97,4 +97,27 @@ modal.style.display = 'none';
 if (localStorage.getItem('products')) {
 products = JSON.parse(localStorage.getItem('products'));
 displayProducts();
+
+
+// search input 
+
+const searchInput = document.getElementById('search-input');
+
+
+searchInput.addEventListener('input', () => {
+  const searchText = searchInput.value.toLowerCase();
+  const products = Array.from(productList.getElementsByTagName('tr')).slice(1);
+
+  products.forEach(product => {
+    const name = product.getElementsByTagName('td')[1].textContent.toLowerCase();
+    const price = product.getElementsByTagName('td')[2].textContent;
+    const description = product.getElementsByTagName('td')[3].textContent.toLowerCase();
+    const text = `${name} ${price} ${description}`; // include price in the search
+    const shouldShow = text.includes(searchText);
+    product.style.display = shouldShow ? '' : 'none';
+  });
+});
+
+
+
 }
